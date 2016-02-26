@@ -1,4 +1,4 @@
-/* Chris
+/* Chris Burns
 Project 3
 Golf ball distance traveled
 */
@@ -37,19 +37,18 @@ int main()
 		dleft = dstart - d;
 		if (tcalc - t >= 1)
 		{
-			t++;
 			cout << setw(5) << t << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
+			t++;
 		}
 
 		else
 		{
 			t = t + .001;
 		}
-		cout << setw(5) << fixed << setprecision(3) << t << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
-
+		
 		d2 = d;
 	}
-	
+	cout << setw(5) << fixed << setprecision(3) << t-.002 << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
 	cout << "Hit ground at time = " << tcalc << endl;
 	
 	
