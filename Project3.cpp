@@ -30,12 +30,12 @@ int main()
 	
 	tcalc = sqrt(((2 * dstart) / g)); //figure out how long it takes to hit the ground
 	
-	while (d <= dstart)
+	while (d < dstart)
 	{
 		d = .5*g*t*t;
 		dinterval = d - d2;
 		dleft = dstart - d;
-		if (tcalc - t >= 1)
+		if (tcalc - t > 1.0)
 		{
 			cout << setw(5) << t << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
 			t++;
@@ -48,7 +48,7 @@ int main()
 		
 		d2 = d;
 	}
-	cout << setw(5) << fixed << setprecision(3) << t-.002 << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
+	cout << setw(5) << fixed << setprecision(3) << t-.001 << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
 	cout << "Hit ground at time = " << tcalc << endl;
 	
 	
