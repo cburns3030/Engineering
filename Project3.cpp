@@ -43,9 +43,10 @@ int main()
 
 		else
 		{
-			cout << setw(5) << fixed << setprecision(3) << t << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
 			t = t + .001;
 		}
+		cout << setw(5) << fixed << setprecision(3) << t << setw(17) << dinterval << setw(21) << d << setw(20) << dleft << endl;
+
 		d2 = d;
 	}
 	
