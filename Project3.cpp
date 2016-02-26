@@ -1,4 +1,4 @@
-/* Chris Burns
+/* Chris
 Project 3
 Golf ball distance traveled
 */
